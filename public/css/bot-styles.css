@@ -1,0 +1,55 @@
+/* Chatbot container styling */
+.bp-widget {
+    border-radius: 12px !important; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important; /* Add shadow */
+  }
+  
+  /* Header styling */
+  .bp-header {
+    background-color: var(--secondary-color) !important; /* Match site's accent color */
+    color: #ffffff !important; /* White text */
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Chat messages styling */
+  .bp-chat .bp-chat-message {
+    border-radius: 8px !important;
+  }
+  
+  .bp-chat .bp-chat-message.bot {
+    background-color: var(--secondary-color) !important; /* Bot message background */
+    color: #ffffff !important; /* Bot message text color */
+  }
+  
+  .bp-chat .bp-chat-message.user {
+    background-color: var(--accent-color) !important; /* User message background */
+    color: #ffffff !important; /* User message text color */
+  }
+  
+  /* Input box styling */
+  .bp-input-container {
+    background-color: var(--card-background) !important; /* Match site's card background */
+  }
+  
+  .bp-input-container input {
+    border-radius: 8px !important;
+    padding: 10px !important;
+  }
+  
+  /* Button styling */
+  .bp-button {
+    background-color: var(--secondary-color) !important;
+    color: #ffffff !important;
+  }
+  
+  .bp-button:hover {
+    background-color: var(--accent-color) !important;
+  }
+  
+  @media (max-width: 768px) {
+    .bp-chat {
+      width: auto !important;
+      height: auto !important;
+      border-radius: none !important;
+    }
+  }

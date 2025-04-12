@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Mahiya | Computer Science Engineer</title>
+    
+    <!-- Link to your CSS file in the public/css folder -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- <div class="logo">
+                <img src="/images/logo.png" alt="Rishi Mahiya Logo">
+            </div>             -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Rishi Mahiya</h1>
+                <h2>Computer Science Engineer</h2>
+                <p>Building innovative solutions with code and data</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/xaviermatroski" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rishi-mahiya-057142288/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:rishimahiya@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-placeholder">
+                    <!-- Replace with actual image -->
+                    <img src="/images/profile.jpg" alt="Rishi Mahiya">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a Computer Science and Engineering student at IIT Ropar with a passion for machine learning, data science, and software development. My academic journey has equipped me with strong analytical skills and a problem-solving mindset.</p>
+                    <p>Currently pursuing my Bachelor's degree with a CGPA of 6.64, I'm focused on building practical applications that leverage data to create impactful solutions.</p>
+                    <a href="/pdf/rishi-mahiya-resume.pdf" class="btn download-resume" download>Download Resume <i class="fas fa-download"></i></a>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Technology</h4>
+                                <p>Indian Institute of Technology, Ropar</p>
+                                <p>CGPA: 6.64 (Till 5th Sem)</p>
+                                <p class="timeline-date">2022-2026</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Senior Secondary</h4>
+                                <p>Central Board of Secondary Education</p>
+                                <p>Percentage: 90.6%</p>
+                                <p class="timeline-date">2022</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Secondary</h4>
+                                <p>Central Board of Secondary Education</p>
+                                <p>Percentage: 81.6%</p>
+                                <p class="timeline-date">2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/bank-marketing.png" alt="Bank Marketing Campaign">
+                    </div>
+                    <div class="project-content">
+                        <h3>Bank Marketing Campaign Prediction</h3>
+                        <p>Predictive analysis project to forecast client term deposit subscriptions based on banking campaign data.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">NumPy</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/xaviermatroski/Bank-Marketing-ML" class="btn project-btn" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            <a href="#" class="btn project-btn view-details" data-project="bank-marketing">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/credit-card.png" alt="Credit Card Fraud Detection">
+                    </div>
+                    <div class="project-content">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <p>End-to-end machine learning project to identify fraudulent credit card transactions using Kaggle's dataset.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">SMOTE</span>
+                            <span class="tech-badge">PCA</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/xaviermatroski/Credit_card_fraud_detection" class="btn project-btn" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            <a href="#" class="btn project-btn view-details" data-project="credit-fraud">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/dog-breed.png" alt="Dog Breed Identification">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dog Breed Identification</h3>
+                        <p>Deep learning project to classify dog breeds using images from Kaggle's dataset.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">CNN</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Matplotlib</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/xaviermatroski/Dog-breed-identification" class="btn project-btn" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            <a href="#" class="btn project-btn view-details" data-project="dog-breed">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/risc-v.png" alt="RISCV Assembler">
+                    </div>
+                    <div class="project-content">
+                        <h3>RISCV-Assembler</h3>
+                        <p>Created a RISC-V assembler that can execute assembly language with various branch predictor optimizations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">Assembly</span>
+                            <span class="tech-badge">RISC-V</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/me-pikachu/RISCV-Assembler" class="btn project-btn" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            <a href="#" class="btn project-btn view-details" data-project="riscv">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/daily-journal.png" alt="Daily Journal">
+                    </div>
+                    <div class="project-content">
+                        <h3>Daily Journal</h3>
+                        <p>A blogging web app with user authentication created using Node.js and MongoDB.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Passport.js</span>
+                            <span class="tech-badge">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/xaviermatroski/Daily-journal" class="btn project-btn" target="_blank">GitHub <i class="fab fa-github"></i></a>
+                            <a href="#" class="btn project-btn view-details" data-project="journal">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>C/C++</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>REST API</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>TensorFlow</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>NumPy & Pandas</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Scikit-learn</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Matplotlib</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <h3>Core Member</h3>
+                        <h4>SWE Club, IIT Ropar</h4>
+                        <p>Coordinated with guest speakers and managed communication to facilitate technical events.</p>
+                        <p class="experience-date">2023 - Present</p>
+                    </div>
+                </div>
+                <!-- Add more experience items as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rishimahiya@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-9589477003</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>IIT Ropar, Punjab, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/rishimahiya" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rishimahiya" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Rishi Mahiya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/script.js"></script>
+    
+    <!-- Botpress Webchat Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/04/12/03/20250412033608-P64M26BT.js"></script>
+
+      
+</body>
+</html>
