@@ -219,12 +219,35 @@ const projectDetails = {
 });
   
   
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
+  
+  // Toggle mobile menu
+  hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+  });
 
-  hamburger.addEventListener('click', function () {
-      navLinks.classList.toggle('active'); // Toggle the 'active' class
-      hamburger.classList.toggle('open'); // Optional for animation
+  // Close menu when clicking outside (mobile only)
+  document.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768 && 
+          !e.target.closest('#navbar') && 
+          navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('open');
+      }
+  });
+
+  // Close menu on link click (mobile)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+              navLinks.classList.remove('active');
+              hamburger.classList.remove('open');
+          }
+      });
   });
 });
+
+
